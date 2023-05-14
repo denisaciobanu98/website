@@ -1,0 +1,87 @@
+body, html { /* imaginea din centru */
+  background-image: url("https://i.pinimg.com/564x/15/4a/d6/154ad682521947a8177e0ad986e29668.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
+  position: relative;
+  margin: 0;
+  height: 100%
+}
+
+body::before { /* imaginea din stanga */
+  content: "";
+  height:100%;
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 25%; 
+  background-image: url("https://i.pinimg.com/564x/7e/cd/43/7ecd4344ed6f9a3dada423a7dac0d72c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+}
+
+body::after { /*imaginea din dreapta */
+  content: "";
+  height: 100%;
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 25%; 
+  background-image: url("https://i.pinimg.com/564x/7e/cd/43/7ecd4344ed6f9a3dada423a7dac0d72c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 0; 
+  transform: scaleX(-1);
+}
+
+.my-heading {
+  color: #4d2600;
+  font-size: 46px;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+ 
+a {
+  text-decoration: none;
+  font-size: 26px;
+  color: white;
+  opacity: 1;
+  
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.box {
+  background-color: rgba(77, 50, 25, 0.5);
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.box2 {
+  width: 40%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin: auto;
+  margin-top: 200px;
+  color: white;
+  background-color: rgba(77, 50, 25, 0.5);
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 18;
+}
+
+
